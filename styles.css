@@ -1,204 +1,575 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .navbar{
+     height: 65px;
+     background-color: rgb(43, 43, 43);
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .navbar li{
+     color: white;
+     list-style: none;
+     margin-top: auto;
+     margin-right: 30px;
+     margin-bottom: auto;
+     font-size: 20px;
+     transition: transform .9s;
+ }
+ 
+ li{
+     text-decoration: none;
+     list-style: none;
+ }
+ 
+ 
+ li a{
+     text-decoration: none;
+     color: white;
+     transition: .9s;
+ }
+ 
+ li a:hover{
+     color: rgb(255, 98, 0);
+     text-decoration: underline;
+ }
+ 
+ .listImg{
+     display: flex;
+     justify-content: flex-start;
+     cursor: pointer;
+     margin-left: 10px;
+ }
+ 
+ .listCategory{
+     display: flex;
+     justify-content: center;
+ 
+ }
+ 
+ .categories{
+     display: flex;
+ }
+ 
+ .logo{
+     width: 200px;
+     height: 40px;
+     margin-top: 10px;
+     margin-left: 20px;
+     transition: .9s;
+ }
+ 
+ .logo:hover{
+     scale: 1.2;
+ }
+ 
+ .searcher{
+     width: 1000px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .searcherInput{
+     border-top-left-radius: 10px;
+     outline: none;
+     width: 600px;
+     height: 33px;
+     font-size: 20px;
+     color: gray;
+     border: 3px solid rgb(255, 98, 0);
+ }
+ 
+ .searcherButton{
+     font-size: 18px;
+     border-bottom-right-radius: 10px;
+     cursor: pointer;
+     border: 3px solid rgb(255, 98, 0);
+     background-color: rgb(255, 98, 0);
+     width: 150px;
+     height: 38px;
+ }
+ 
+ .cart{
+     display: flex;
+     font-size: 20px;
+     color: white;
+     margin-left: 15px;
+     transition: .3s;
+ }
+ 
+ .cart:hover{
+     color: rgb(255, 98, 0);
+     font-size: 22px;
+ }
+ 
+ .login{
+     display: flex;
+     cursor: pointer;
+     font-size: 20px;
+     color: white;
+     margin-right: 15px;
+     transition: .3s;
+ }
+ 
+ .login:hover{
+     color: rgb(255, 98, 0);
+     font-size: 22px;
+ }
+ 
+ .banner1{
+     width: 100%;
+     height: 700px;
+     margin-bottom: 70px;
+ }
+ 
+ .cardGral{
+     width: 800px;
+     height: 200px;
+     display: flex;
+     margin-bottom: 50px;
+     border-bottom: 1px rgb(43, 43, 43) solid;
+     border-right: 1px rgb(43, 43, 43) solid;
+ }
+ 
+ .infoProduct{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+ 
+ .btnProduct{
+     width: 250px;
+     font-size: 20px;
+     height: 50px;
+     background-color: #2b2b2b;
+     color: white;
+     border-top-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     transition: 0.7s;
+     cursor: pointer;
+     margin-left: 300px;
+ }
+ 
+ .btnProduct:hover{
+     background-color: #ff6200;
+ }
+ 
+ .imgContainer{
+     margin-right: 30px;
+ }
+ 
+ .imgProduct{
+     margin-top: 20px;
+     margin-left: 15px;
+     transition: .4s;
+ }
+ 
+ 
+ .titleProduct{
+     font-size: 25px;
+ }
+ 
+ .priceProduct{
+     font-size: 25px;
+     color: #4675b9;
+     cursor: pointer;
+ }
+ 
+ .stockProduct{
+     font-size: 18px;
+     color: gray;
+ }
+ 
+ .contentCYP{
+     display: flex;
+     justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
+     width: 80%;
+ }
+ 
+ .categoriesContent{
+     margin-right: 50px;
+     width: 30%;
+     text-align: center;
+     border: 3px solid red;
+ 
+ }
+ 
+ .categoriesContent h2{
+     cursor: pointer;
+     font-size: 20px;
+     text-decoration: underline;
+     color: rgb(255, 98, 0);
+     margin-bottom: 15px;
+ }
+ 
+ .contentProduct{
+     width: 70%;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .categories-Item{
+     margin-bottom: 15px;
+     cursor: pointer;
+     color:rgb(43, 43, 43) ;
+     transition: .4s;
+ }
+ 
+ .categories-Item:hover{
+     text-decoration: underline #fb6304;
+     scale: 1.4;
+ }
 
-.navbar{
-    height: 65px;
-    background-color: rgb(43, 43, 43);
-    display: flex;
-    justify-content: space-between;
-}
+ .imgProduct:hover{
+     scale: 1.1;
+ }
+ 
+ 
+ 
+ /* LOGIN */
+ 
+ .loginBox{
+     position: fixed;
+     display: flex;
+     align-items: center;
+     background: rgb(43,43,43);
+     background: linear-gradient(117deg, rgba(43,43,43,1) 8%, rgba(255,98,0,0.6028985507246376) 91%);
+     justify-content: center;
+      border:2px solid rgba(255, 255, 255, .5); 
+     border-radius: 20px;
+     box-shadow: 10px 0 90px rgba(0, 0, 0, .5);
+     height: 450px;
+     width: 350px;
+     transition: .5s;
+     top: 30%; 
+     left: 44%;
+ }
+ 
+ /* BLUR DE BODY COMLPETO */
+ 
+ .show{
+     filter: blur(5px);   
+    
+ }
+ 
+ .registerBox{
+     position: fixed;
+     display: flex;
+     align-items: center;
+     background: rgb(43,43,43);
+     background: linear-gradient(117deg, rgba(43,43,43,1) 8%, rgba(255,98,0,0.6028985507246376) 91%);
+     justify-content: center;
+      border:2px solid rgba(255, 255, 255, .5); 
+     border-radius: 20px;
+     backdrop-filter: blur(20px);
+     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+     height: 610px;
+     width: 350px;
+     top: 23%; 
+     left: 44%;
+     transition: .5s;
+ }
+ 
+ .loginTitle h2{
+     text-align: center;
+     width: 100%;
+     font-size: 40px;
+     color: white;
+     
+ }
+ .registerTitle h2{
+     text-align: center;
+     width: 100%;
+     font-size: 40px;
+     color: white;
+ }
+ 
+ .inputboxLogin{
+     position: relative;
+     width: 100%;
+     height: 50px;
+     border-bottom: 2px solid rgb(255, 98, 0);
+     margin: 30px 0 ;
+ }
+ 
+  .inputboxLogin label{
+     position: absolute;
+     top: 50%;
+     left: 5px;
+     transform:translateY(-50%);
+     font-size: 1em;
+     color: white;
+     font-weight: 500;
+     pointer-events: none;
+     transition: .5s;
+ }
+ 
+ .inputboxLogin input:focus~label,
+ .inputboxLogin input:valid~label{
+     top: -5px;
+ }
+ 
+ .inputboxLogin input{
+     width: 100%;
+     height: 100%;
+     background: transparent;
+     border: none;
+     outline: none;
+     font-size: 1em;
+     color: rgb(255, 98, 0);
+     font-weight: 600;
+     padding: 0 35px 0 5px;
+ }
+ 
+ .inputboxLogin .iconLogin{
+     position: absolute;
+     right: 8px;
+     font-size: 1.2em;
+     color: rgb(0, 0, 0);
+ }
+ 
+ .rememberMe{
+     font-size: .9em;
+     color: white;
+     font-weight: 350;   
+     margin: -15px 0 15px;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+ }
+ 
+ .rememberMe a{
+     color: rgb(43, 43, 43);
+     text-decoration: none;
+     font-weight: 600;
+ }
 
-.navbar li{
-    color: white;
-    list-style: none;
-    margin-top: auto;
-    margin-right: 30px;
-    margin-bottom: auto;
-    font-size: 20px;
-    transition: transform .9s;
-}
+ .rememberMe a:hover{
+     text-decoration: underline;
+ }
+ 
+ .btnLogin{
+     width: 100%;
+     height: 45px;
+     background: rgb(255, 98, 0);
+     color: #fff;
+     border: none;
+     outline: none;
+     border-radius: 6px;
+     cursor: pointer;
+     font-size: 1em;
+     font-weight: 500;
+ }
+ 
+ .btnRegister{
+     width: 100%;
+     height: 45px;
+     background: rgb(255, 98, 0);
+     color: #fff;
+     border: none;
+     outline: none;
+     border-radius: 6px;
+     cursor: pointer;
+     font-size: 1em;
+     font-weight: 500;
+ }
+ 
+ .login-register{
+     font-size: .9em;
+     color: white;
+     text-align: center;
+     font-weight: 500;
+     margin: 25px 0 10px;
+ }
+ 
+ .login-register p a {
+     color: rgb(43, 43, 43);
+     text-decoration: none;
+     font-weight: 600;
+ }
 
-li a{
-    text-decoration: none;
-    color: white;
-    transition: .9s;
-}
+ .login-register p a:hover{
+     text-decoration: underline;
+ }
+ 
+ .login-rg{
+     font-size: .9em;
+     color: white;
+     text-align: center;
+     font-weight: 500;
+     margin: 25px 0 10px;
+ }
 
-li a:hover{
-    color: rgb(255, 98, 0);
-    /* border-bottom: 2px solid rgb(255, 98, 0); */
-    text-decoration: underline;
-}
+ .login-rg p a{
+     color: rgb(43, 43, 43);
+     text-decoration: none;
+     font-weight: 600;
+ }
 
-.listImg{
-    display: flex;
-    justify-content: flex-start;
-    cursor: pointer;
-    margin-left: 10px;
-}
+ .login-rg p a:hover{
+     text-decoration: underline;
+ }
+ 
+ .acceptTerms{
+    
+     color: white;
+    
+ }
+ 
+ .iconP{
+     font-size: 30px;
+     color: rgb(255, 98, 0);
+     position: absolute;
+     display: flex;
+     top :15px;
+     right: 160px;
+ 
+ }
+ 
+ .exit{
+     position: absolute;
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     top: 0;
+     right: -1px;
+     color: rgb(255, 98, 0);
+     background-color:white;
+     border-top-right-radius: 20px;
+     border-bottom-left-radius: 20px;   
+     cursor: pointer;
+ }
 
-.listCategory{
-    display: flex;
-    justify-content: center;
+ .exitRegister{
+     position: absolute;
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     top: 0;
+     right: -1px;
+     color: rgb(255, 98, 0);
+     background-color:white;
+     border-top-right-radius: 20px;
+     border-bottom-left-radius: 20px;   
+     cursor: pointer;
+ }
 
-}
+ .hide{
+     display: none;
+ }
 
-.categories{
-    display: flex;
-}
+ img { max-width: 100%; max-height: 100%; }
 
-.logo{
-    width: 200px;
-    height: 40px;
-    margin-top: 10px;
-    transition: .9s;
-}
-
-.logo:hover{
-    width: 250px;
-    height: 50px;
-}
-
-.searcher{
-    width: 1000px;
+.modal-body{
+    width: 80%;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    box-shadow: 0px 7px 64px 7px rgb(43, 43, 43);
+    left: 10%;
+    top: 10%;
 }
 
-.searcherInput{
-    border-top-left-radius: 10px;
-    outline: none;
-    width: 600px;
-    height: 35px;
-    font-size: 20px;
-    color: gray;
-    border: 3px solid rgb(255, 98, 0);
+td{
+    border-bottom: #fb6304 1px solid;
 }
 
-.searcherButton{
-    font-size: 18px;
-    border-bottom-right-radius: 10px;
-    cursor: pointer;
-    border: 3px solid rgb(255, 98, 0);
-    background-color: rgb(255, 98, 0);
-    width: 150px;
-    height: 35px;
-}
-
-.cart{
-    display: flex;
-    font-size: 20px;
-    color: white;
-    margin-left: 15px;
-    transition: .3s;
-}
-
-.cart:hover{
-    color: rgb(255, 98, 0);
+ .imagenCart{
     font-size: 22px;
-}
-
-.login{
+    text-align: center;
     display: flex;
-    font-size: 20px;
-    color: white;
-    margin-right: 15px;
-    transition: .3s;
-}
-
-.login:hover{
-    color: rgb(255, 98, 0);
-    font-size: 22px;
-}
-
-.banner1{
-    width: 100%;
-    height: 700px;
-    margin-bottom: 70px;
-}
-
-.cardGral{
-    width: 800px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
     height: 200px;
-    display: flex;
-    margin-bottom: 50px;
-    border-bottom: 1px rgb(43, 43, 43) solid;
-    border-right: 1px rgb(43, 43, 43) solid;
 }
 
-.infoProduct{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.titleCart{
+    text-indent: 20px;
+    text-align: center;
+    height: 200px;
+    font-size: 22px;
+    width: 500px;
 }
 
-.btnProduct{
-    width: 250px;
+.quantityCart{
+    text-align: center;
+    width: 200px;
+    height: 200px;
     font-size: 20px;
-    height: 50px;
-    background-color: rgb(43, 43, 43);
-    color: white;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: 0.7s;
-    cursor: pointer;
-    margin-left: 300px;
 }
 
-.btnProduct:hover{
-    background-color: rgb(255, 98, 0);
+.priceCart{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
 }
 
-.imgContainer{
-    margin-right: 30px;
+.delete{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    color: Red;
+    border: 0px;
+    background-color: white;
 }
 
-.imgProduct{
-    margin-top: 20px;
-    margin-left: 15px;
-}
-
-.titleProduct{
-    font-size: 25px;
-}
-
-.priceProduct{
-    font-size: 25px;
-    color: #4675b9;
-    cursor: pointer;
-}
-
-.stockProduct{
-    font-size: 18px;
-    color: gray;
-}
-
-.contentCYP{
+.btncompraContainer{
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
 }
 
-.categoriesContent{
-    margin-right: 50px;
-    width: 30%;
+.btncompra{
+    cursor: pointer;
     text-align: center;
-    border: 3px solid red;
+    height: 50px;
+    width: 400px;
+    font-size: 30px;
+    background-color: rgb(255, 98, 0);
+    margin-bottom: 10px;
 }
 
-.contentProduct{
-    width: 70%;
+.btnlimpiar{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    background-color: red;
+}
+
+.totalcontainer{
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.categoriesItem{
-    text-decoration: none;
-    list-style: none;
+.totalCart{
+    text-align: Center;
+    font-size: 40px;
+}
+
+.exitCart{
+    position: absolute;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    right: -1px;
+    color: white;
+    background-color:rgb(255, 98, 0);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;   
+    cursor: pointer;
 }

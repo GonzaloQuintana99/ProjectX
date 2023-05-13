@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Project X - Tienda de Hardware</title>
 </head>
-<body>
+<body >
     <header>
         <nav class="navbar">
             <div class="listImg">
@@ -17,7 +25,7 @@
             </div>
 
             <div class="searcher">
-                <a href=""><i class="fa-solid fa-user login"></i></a>
+                <a  class="btn"><i class="fa-solid fa-user login"></i></a>
                 <input placeholder="Buscar producto..." class="searcherInput" type="text">
                 <button class="searcherButton">Buscar</button>
                 <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
@@ -32,33 +40,142 @@
                 </div>
     </header>
 
-    <main>
+    <main class="blur">
         <section>
             <img class="banner1" src="./img/banner1.jpg" alt="banner">
         </section>
 
         <div class="contentCYP">
             <div class="categoriesContent">
-                <p>CATEGORIAS</p>
-                <ul class="categories-Item">
+                <h2>CATEGORIAS</h2>
+                <ul>
                     <li class="categories-Item">Procesadores</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="categories-Item">Gabinetes</li>
+                    <li class="categories-Item">Memorias Ram</li>
+                    <li class="categories-Item">Placas de Video</li>
+                    <li class="categories-Item">Teclado</li>
+                    <li class="categories-Item">Mouse</li>
                 </ul>
                 <img src="" alt="">
             </div>
             <div class="contentProduct">
             </div>
         </div>
+
+           
+
     </main>
 
+<!-- FORMULARIO LOGIN -->
+<div class="loginBox hide animate__animated animate__bounceInDown">
+    <div class="loginTitle">
+        <h2>Login</h2>
+        <span class="exit"><ion-icon name="close-circle"></span>
+        <span class="iconP"><ion-icon name="people"></ion-icon></span>
+        <form action="#">
+            <div class="inputboxLogin">
+                <span class="iconLogin"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required class="inputemailLogin">
+                <label for="">Email</label>
+            </div>
+            <div class="inputboxLogin">
+                <span class="iconLogin"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required class="inputpwLogin">
+                <label>Password</label>
+            </div>
+            <div class="rememberMe">
+                <label >
+                    <input type="checkbox">Recuerdame
+                    <a href="#">Olvidaste Tu Contraseña?</a>
+                </label>
+            </div>
+                <button type="submit" class="btnLogin" >Logearse</button>
+                <div class="login-rg">
+                    <p>No Tienes Cuenta Aun? <a href="#" class="register-link">Registrate!</a>
 
+                    </p>
+                
+                </div>
+        </form>
+    </div>
+    </div>
+
+      <!-- Register -->
+  <div class="registerBox hide animate__animated    animate__bounceInUp">
+    <div class="registerTitle">
+        <h2>Regìstrate</h2>
+        <span class="exitRegister"><ion-icon name="close-circle"></ion-icon></span>
+        <span class="iconP"><ion-icon name="people"></ion-icon></span>
+        <form action="#">
+            <div class="inputboxLogin">
+                <span class="iconLogin"><ion-icon name="finger-print"></ion-icon></span>
+                <input type="text" required class="inputRegisterName">
+                <label for="">Name</label>
+            </div>
+            <div class="inputboxLogin">
+                <span class="iconLogin" ><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required class="inputRegisterMail">
+                <label for="">Email</label>
+            </div>
+            <div class="inputboxLogin">
+                <span class="iconLogin"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required class="inputRegisterPassword">
+                <label>Password</label>
+            </div>
+            <div class="inputboxLogin">
+                <span class="iconLogin"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required class="inputRepeatPassword">
+                <label>Confirm Paswword</label>
+            </div>
+            <div >
+                <label class="acceptTerms">
+                    <input type="checkbox"> Acepto Los terminos y Condiciones                  
+                </label>
+                
+            </div>
+            <br>
+                <button type="submit" class="btnRegister">Registrarse</button>
+                <div class="login-register">
+                    <p>Ya tienes Cuenta? <a href="#" >Logueate</a>
+                    </p>
+                </div>
+        </form>
+    </div>
+    </div> 
+
+    <div class="modal-body">
+        <span class="exitCart"><ion-icon name="close-circle"></ion-icon></span>
+        <div>
+        <table>
+          <thead>
+            <tr>
+            <td class="imagenCart"><strong>Imagen</strong></td>
+            <td class="titleCart"><strong>Producto</strong></td>
+            <td class="quantityCart"><strong>Cantidad</strong></td>
+            <td class="priceCart"><strong>Precio</strong></td>
+            <td></td>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+        <div class="totalcontainer">
+            <p><strong class="totalCart">Total: $0</strong></p>
+        </div>
+        <div class="btncompraContainer">
+        <button type="button" class="btncompra">Finalizar Compra</button>
+        </div>
+    </div>
+      </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/e3b3d41c44.js" crossorigin="anonymous"></script>
     <script src="./products.js"></script>
+    <script src="./cartRender.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

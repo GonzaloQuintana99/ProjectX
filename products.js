@@ -40,7 +40,7 @@ for (const product of products) {
     </div>
     <div class="infoProduct">
     <h2 class="titleProduct">${product.title}</h2>
-    <p class="priceProduct">Precio: $${product.price}</p>
+    <p class="priceProduct">Precio: <span>$${product.price}</span></p>
     <p class="stockProduct">Stock: ${product.stock}</p>
     <button class="btnProduct"><i class="fa-solid fa-cart-shopping cart"></i> Agregar al Carrito</button>
     </div>
